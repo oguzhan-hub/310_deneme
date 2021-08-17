@@ -17,5 +17,9 @@ namespace _310_deneme
             InitializeComponent();
         }
 
+        private void btn_deneme_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
