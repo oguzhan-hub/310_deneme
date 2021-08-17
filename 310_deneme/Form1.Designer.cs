@@ -30,6 +30,7 @@ namespace _310_deneme
         private void InitializeComponent()
         {
             this.btn_deneme = new System.Windows.Forms.Button();
+            this.lbl_deneme = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_deneme
@@ -42,21 +43,33 @@ namespace _310_deneme
             this.btn_deneme.UseVisualStyleBackColor = true;
             this.btn_deneme.Click += new System.EventHandler(this.btn_deneme_Click);
             // 
+            // lbl_deneme
+            // 
+            this.lbl_deneme.AutoSize = true;
+            this.lbl_deneme.Location = new System.Drawing.Point(382, 51);
+            this.lbl_deneme.Name = "lbl_deneme";
+            this.lbl_deneme.Size = new System.Drawing.Size(38, 15);
+            this.lbl_deneme.TabIndex = 1;
+            this.lbl_deneme.Text = "label1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbl_deneme);
             this.Controls.Add(this.btn_deneme);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button btn_deneme;
+        private System.Windows.Forms.Label lbl_deneme;
     }
 }
 
