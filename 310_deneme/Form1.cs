@@ -25,8 +25,16 @@ namespace _310_deneme
 
             //variables for user records
             string[] userInfoArray = File.ReadAllLines(userRecordPath);
-            List<string> userInfoList = new List<string>();             //this for checking login
-            userInfoList = File.ReadAllLines(userRecordPath).ToList();  //this for recording new entries on text (easy append in string format)
+            try
+            {
+                List<string> userInfoList = new List<string>();             //this for checking login
+                userInfoList = File.ReadAllLines(userRecordPath).ToList();  //this for recording new entries on text (easy append in string format)
+            }
+            catch (IOException)
+            {
+                lblLoginWarning.Text = "Connection failed with User info file";
+            }
+            
         }
 
         private void btnRegister_Click(object sender, EventArgs e)

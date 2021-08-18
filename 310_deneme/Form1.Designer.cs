@@ -30,7 +30,7 @@ namespace _310_deneme
         private void InitializeComponent()
         {
             this.groupLogin = new System.Windows.Forms.GroupBox();
-            this.lblLoginRegister = new System.Windows.Forms.Label();
+            this.lblLoginWarning = new System.Windows.Forms.Label();
             this.btnRegister = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
             this.txtLoginPassword = new System.Windows.Forms.TextBox();
@@ -69,7 +69,7 @@ namespace _310_deneme
             // 
             // groupLogin
             // 
-            this.groupLogin.Controls.Add(this.lblLoginRegister);
+            this.groupLogin.Controls.Add(this.lblLoginWarning);
             this.groupLogin.Controls.Add(this.btnRegister);
             this.groupLogin.Controls.Add(this.btnLogin);
             this.groupLogin.Controls.Add(this.txtLoginPassword);
@@ -83,17 +83,17 @@ namespace _310_deneme
             this.groupLogin.TabStop = false;
             this.groupLogin.Text = "Login";
             // 
-            // lblLoginRegister
+            // lblLoginWarning
             // 
-            this.lblLoginRegister.AutoSize = true;
-            this.lblLoginRegister.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblLoginRegister.Location = new System.Drawing.Point(41, 188);
-            this.lblLoginRegister.MaximumSize = new System.Drawing.Size(260, 50);
-            this.lblLoginRegister.MinimumSize = new System.Drawing.Size(260, 50);
-            this.lblLoginRegister.Name = "lblLoginRegister";
-            this.lblLoginRegister.Size = new System.Drawing.Size(260, 50);
-            this.lblLoginRegister.TabIndex = 13;
-            this.lblLoginRegister.Text = "Warning area";
+            this.lblLoginWarning.AutoSize = true;
+            this.lblLoginWarning.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblLoginWarning.Location = new System.Drawing.Point(41, 188);
+            this.lblLoginWarning.MaximumSize = new System.Drawing.Size(260, 50);
+            this.lblLoginWarning.MinimumSize = new System.Drawing.Size(260, 50);
+            this.lblLoginWarning.Name = "lblLoginWarning";
+            this.lblLoginWarning.Size = new System.Drawing.Size(260, 50);
+            this.lblLoginWarning.TabIndex = 13;
+            this.lblLoginWarning.Text = "Warning area";
             // 
             // btnRegister
             // 
@@ -405,7 +405,7 @@ namespace _310_deneme
         #endregion
 
         private System.Windows.Forms.GroupBox groupLogin;
-        private System.Windows.Forms.Label lblLoginRegister;
+        private System.Windows.Forms.Label lblLoginWarning;
         private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.TextBox txtLoginPassword;
