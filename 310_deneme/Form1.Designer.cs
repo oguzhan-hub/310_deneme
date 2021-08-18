@@ -29,7 +29,7 @@ namespace _310_deneme
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupRegister = new System.Windows.Forms.GroupBox();
+            this.groupLogin = new System.Windows.Forms.GroupBox();
             this.lblLoginRegister = new System.Windows.Forms.Label();
             this.btnRegister = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
@@ -60,28 +60,28 @@ namespace _310_deneme
             this.tabApprove = new System.Windows.Forms.TabPage();
             this.lblRegisterResult = new System.Windows.Forms.Label();
             this.btnSubmitRegister = new System.Windows.Forms.Button();
-            this.groupRegister.SuspendLayout();
+            this.groupLogin.SuspendLayout();
             this.tabControlRegister.SuspendLayout();
             this.tabLoginInfo.SuspendLayout();
             this.tabUserInfo.SuspendLayout();
             this.tabApprove.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupRegister
+            // groupLogin
             // 
-            this.groupRegister.Controls.Add(this.lblLoginRegister);
-            this.groupRegister.Controls.Add(this.btnRegister);
-            this.groupRegister.Controls.Add(this.btnLogin);
-            this.groupRegister.Controls.Add(this.txtLoginPassword);
-            this.groupRegister.Controls.Add(this.label10);
-            this.groupRegister.Controls.Add(this.txtLoginNickName);
-            this.groupRegister.Controls.Add(this.label11);
-            this.groupRegister.Location = new System.Drawing.Point(426, 132);
-            this.groupRegister.Name = "groupRegister";
-            this.groupRegister.Size = new System.Drawing.Size(346, 259);
-            this.groupRegister.TabIndex = 5;
-            this.groupRegister.TabStop = false;
-            this.groupRegister.Text = "Register";
+            this.groupLogin.Controls.Add(this.lblLoginRegister);
+            this.groupLogin.Controls.Add(this.btnRegister);
+            this.groupLogin.Controls.Add(this.btnLogin);
+            this.groupLogin.Controls.Add(this.txtLoginPassword);
+            this.groupLogin.Controls.Add(this.label10);
+            this.groupLogin.Controls.Add(this.txtLoginNickName);
+            this.groupLogin.Controls.Add(this.label11);
+            this.groupLogin.Location = new System.Drawing.Point(426, 132);
+            this.groupLogin.Name = "groupLogin";
+            this.groupLogin.Size = new System.Drawing.Size(346, 259);
+            this.groupLogin.TabIndex = 5;
+            this.groupLogin.TabStop = false;
+            this.groupLogin.Text = "Login";
             // 
             // lblLoginRegister
             // 
@@ -103,6 +103,7 @@ namespace _310_deneme
             this.btnRegister.TabIndex = 12;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // btnLogin
             // 
@@ -384,12 +385,12 @@ namespace _310_deneme
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.groupRegister);
+            this.Controls.Add(this.groupLogin);
             this.Controls.Add(this.tabControlRegister);
             this.Name = "Form1";
             this.Text = "s";
-            this.groupRegister.ResumeLayout(false);
-            this.groupRegister.PerformLayout();
+            this.groupLogin.ResumeLayout(false);
+            this.groupLogin.PerformLayout();
             this.tabControlRegister.ResumeLayout(false);
             this.tabLoginInfo.ResumeLayout(false);
             this.tabLoginInfo.PerformLayout();
@@ -403,7 +404,7 @@ namespace _310_deneme
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupRegister;
+        private System.Windows.Forms.GroupBox groupLogin;
         private System.Windows.Forms.Label lblLoginRegister;
         private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.Button btnLogin;
